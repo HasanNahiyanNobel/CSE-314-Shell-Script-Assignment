@@ -24,13 +24,13 @@ Write a bash script, `swap.sh`, that takes two file names as parameters and swap
 
 **Description:**
 1. Swaps the specified files without leaving a temporary file.
-2. Both FILEs must be regular files, and must already exist and be readable and writable.
+2. Both files must be regular files, and must already exist and be readable and writable.
 3. Exit codes (value shown on screen after you run the script):
     * 0 for successful completion
     * 1 for invalid number of arguments
-    * 2 for one or both of the FILEs do not exist
-    * 3 for one or both of the FILEs exist but are not regular
-    * 4 for one or both of FILEs are not readable and writeable
+    * 2 for one or both of the files do not exist
+    * 3 for one or both of the files exist but are not regular
+    * 4 for one or both of files are not readable and writeable
     * 5 for some other error occurred
 
 
@@ -39,7 +39,7 @@ Write a bash script, `swap.sh`, that takes two file names as parameters and swap
 Suppose you have a list of guests in `guests.txt` file to whom you need to send invitation emails. You also have an invitation template named `template.txt`. Assume both are in current directory. Now write a script which will use the template and generate `invite_<guestname>.txt` for all the guests. The placeholder `<guestname>` in the `template.txt` will be replaced by the appropriate guest’s name.
 
 Sample file contents:
-|  tempalte.txt  |  guests.txt  |
+|  template.txt  |  guests.txt  |
 |:---------------|:------------:|
 |  Dear \<guestname\>,<br><br>We welcome you to CSE, BUET<br><br>Regards<br>CSE, BUET. |  Alice<br>Bob<br>Trudy<br>Curl |
 
