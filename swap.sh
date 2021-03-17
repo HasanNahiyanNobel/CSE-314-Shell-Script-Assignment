@@ -8,3 +8,5 @@ mv $2 $temp_name2
 
 mv $temp_name1 $2
 mv $temp_name2 $1
+
+exit 0
