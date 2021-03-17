@@ -1,6 +1,6 @@
 #!/bin/bash
 
-read number
+number=$1
 
 length=${#number}
 sum=0
