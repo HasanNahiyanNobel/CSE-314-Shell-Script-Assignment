@@ -5,6 +5,6 @@ We welcome you to lorem ipsum dolor sit amet, consectetur adipiscing elit, sed d
 Condimentum vitae sapien pellentesque habitant morbi tristique senectus et netus. Nisl pretium fusce id velit ut tortor pretium viverra suspendisse. Eu lobortis elementum nibh tellus molestie. Scelerisque fermentum dui faucibus in. Aliquam ut porttitor leo a diam. Sed augue lacus viverra vitae congue. Mi in nulla posuere sollicitudin.
 
 Regards
-Jon Doe
+John Doe
 Department of Computer Science and Engineering,
 Bangladesh University of Engineering and Technology

@@ -1,22 +1,24 @@
 #!/bin/bash
 
-filename="guests.txt"
+template_file="template.txt"
+guests_list_file="guests.txt"
+template_text=""
 
-template_text="We welcome you to lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Viverra vitae congue eu consequat ac felis donec. Ultrices mi tempus imperdiet nulla.
-    
-Condimentum vitae sapien pellentesque habitant morbi tristique senectus et netus. Nisl pretium fusce id velit ut tortor pretium viverra suspendisse. Eu lobortis elementum nibh tellus molestie. Scelerisque fermentum dui faucibus in. Aliquam ut porttitor leo a diam. Sed augue lacus viverra vitae congue. Mi in nulla posuere sollicitudin.
-    
-Regards
-Jon Doe
-Department of Computer Science and Engineering,
-Bangladesh University of Engineering and Technology"
+# Read from template file
+{
+    read
+    while IFS=, read -r a_line
+    do 
+        template_text="${template_text}\n$a_line"
+    done
+} < $template_file
 
 
+
+# Create invitation files
 while read -r line; do
     name="$line"
-    
-    echo -en "" > "invite_$name.txt" # Clear the file
-    
-    echo -en "Dear $name,\n\n$template_text" >> "invite_$name.txt"
-    
-done < "$filename"
+    echo -en "" > "invite_$name.txt" # Clear the file    
+    echo -en "Dear $name,$template_text" >> "invite_$name.txt" # Append the text
+done < "$guests_list_file"
+
