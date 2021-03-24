@@ -1,4 +1,4 @@
-Dear <guestname>,
+Hello <guestname> Vai,
 
 We welcome you to lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Viverra vitae congue eu consequat ac felis donec. Ultrices mi tempus imperdiet nulla.
 
