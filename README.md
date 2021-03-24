@@ -30,7 +30,7 @@ Write a bash script, `swap.sh`, that takes two file names as parameters and swap
     * 1 for invalid number of arguments
     * 2 for one or both of the files do not exist
     * 3 for one or both of the files exist but are not regular
-    * 4 for one or both of files are not readable and writeable
+    * 4 for one or both of files are not readable and writable
     * 5 for some other error occurred
 
 

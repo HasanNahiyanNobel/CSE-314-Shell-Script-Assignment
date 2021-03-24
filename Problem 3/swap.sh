@@ -16,19 +16,19 @@ if [ $# -ne 2 ]; then
 	
 elif [ ! -e $1 ] || [ ! -e $2 ]; then
 	exit_code=2 #At least one file does not exist
-    # echo "At least one file does not exist."
+	# echo "At least one file does not exist."
 	echo $exit_code
-    
-    
+	
+	
 elif [ ! -f $1 ] || [ ! -f $2 ]; then
 	exit_code=3 #At least one of the files is not regular
 	# echo "At least one of the files is not regular."
 	echo $exit_code
 	
 	
-elif ([ ! -r $1 ] || [ ! -w $1 ]) || ([ ! -r $2 ] || [ ! -w $2 ]); then
-	exit_code=4 #At least one of the files is not readable and writeable
-	# echo "At least one of the files is not readable and writeable."
+elif ([ ! -r $1 ] && [ ! -w $1 ]) || ([ ! -r $2 ] && [ ! -w $2 ]); then
+	exit_code=4 #At least one of the files is not readable and writable
+	# echo "At least one of the files is not readable and writable."
 	echo $exit_code
 	
 	
