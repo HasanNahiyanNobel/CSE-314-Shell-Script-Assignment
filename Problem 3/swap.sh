@@ -26,7 +26,7 @@ elif [ ! -f $1 ] || [ ! -f $2 ]; then
 	echo $exit_code
 	
 	
-elif ([ ! -r $1 ] && [ ! -w $1 ]) || ([ ! -r $2 ] && [ ! -w $2 ]); then
+elif ([ ! -r $1 ] || [ ! -w $1 ]) || ([ ! -r $2 ] || [ ! -w $2 ]); then
 	exit_code=4 #At least one of the files is not readable and writable
 	# echo "At least one of the files is not readable and writable."
 	echo $exit_code
